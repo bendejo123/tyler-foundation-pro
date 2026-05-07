@@ -1,0 +1,117 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import TrustBar from '../components/TrustBar.astro';
+import CTASection from '../components/CTASection.astro';
+import SignsList from '../components/SignsList.astro';
+
+const warningSigns = [
+  'Cracks in your drywall, especially diagonal cracks near door frames and windows',
+  'Doors or windows that stick, won\'t latch, or have visible gaps at the corners',
+  'Floors that feel bouncy, slope toward one side, or have visible dips',
+  'Gaps between your walls and the ceiling or floor',
+  'Cracks in your brick exterior or mortar joints',
+  'Water pooling near your foundation after rain',
+];
+---
+
+<Layout
+  title="Foundation Repair in Tyler, TX | Free Inspection | Tyler Foundation Pros"
+  description="Tyler Foundation Pros fixes cracked, settling, and sinking foundations in Tyler and East Texas. Call for a free inspection. Fast response, local experts."
+>
+  <!-- Hero -->
+  <HeroSection
+    h1="Expert Foundation Repair in Tyler, TX"
+    subheading="East Texas clay soil is relentless. It swells in the rain, shrinks in the drought, and puts constant pressure on your home's foundation. We fix it — fast, right, and guaranteed."
+    buttonText="Call for a Free Inspection → (903) 555-1234"
+  />
+
+  <!-- Trust Bar -->
+  <TrustBar />
+
+  <!-- Why Tyler Homes Have Foundation Problems -->
+  <section class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Why Tyler Homes Have Foundation Problems</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        East Texas sits on some of the most expansive clay soil in the country. In Smith County and the surrounding region, this clay absorbs water and swells during wet seasons — then contracts sharply during summer droughts. Your home's concrete slab or pier-and-beam structure goes through this cycle year after year.
+      </p>
+      <p class="text-gray-700 text-lg">
+        The result? Cracks in your walls and ceilings. Doors and windows that stick or won't close. Floors that slope. Gaps between your walls and the ceiling. These aren't cosmetic problems. Left untreated, foundation movement causes permanent structural damage that gets more expensive the longer you wait.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="bg-gray-50 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Our Foundation Repair Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white border border-gray-200 rounded p-6 flex flex-col">
+          <h3 class="text-xl font-bold mb-3">Slab Foundation Repair</h3>
+          <p class="text-gray-600 text-sm flex-grow mb-4">
+            Most Tyler homes are built on concrete slabs. When the clay soil underneath shifts, your slab shifts with it. We use steel pier systems and polyurethane foam to stabilize and lift your slab back to its original position.
+          </p>
+          <a href="/slab-foundation-repair" class="text-brand font-semibold text-sm hover:underline">Learn More &rarr;</a>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-6 flex flex-col">
+          <h3 class="text-xl font-bold mb-3">Pier &amp; Beam Repair</h3>
+          <p class="text-gray-600 text-sm flex-grow mb-4">
+            Tyler's historic neighborhoods — from the Azalea District to Oakwood — are filled with older pier-and-beam homes. We replace rotted beams, reset settled piers, and re-level your floor to factory spec.
+          </p>
+          <a href="/pier-beam-repair" class="text-brand font-semibold text-sm hover:underline">Learn More &rarr;</a>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-6 flex flex-col">
+          <h3 class="text-xl font-bold mb-3">House Leveling</h3>
+          <p class="text-gray-600 text-sm flex-grow mb-4">
+            If your floors are sloping or your home feels "off," your foundation has likely settled unevenly. Our house leveling process corrects differential settlement and restores your home's structural integrity.
+          </p>
+          <a href="/house-leveling" class="text-brand font-semibold text-sm hover:underline">Learn More &rarr;</a>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-6 flex flex-col">
+          <h3 class="text-xl font-bold mb-3">Commercial Foundation Repair</h3>
+          <p class="text-gray-600 text-sm flex-grow mb-4">
+            Office buildings, retail spaces, and warehouses in East Texas face the same soil problems as homes — at larger scale. We handle commercial jobs of all sizes with minimal disruption to your operation.
+          </p>
+          <a href="/commercial-foundation-repair" class="text-brand font-semibold text-sm hover:underline">Learn More &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area Section -->
+  <section class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Serving Tyler and the Surrounding Area</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        We serve homeowners and businesses throughout Smith County and beyond, including:
+      </p>
+      <div class="flex flex-wrap gap-3 mb-6">
+        {['Lindale', 'Whitehouse', 'Bullard', 'Flint', 'Hideaway', 'Chandler', 'Longview', 'Jacksonville', 'Kilgore'].map((city) => (
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm font-medium">{city}</span>
+        ))}
+      </div>
+      <p class="text-gray-600 text-sm">
+        Not sure if we cover your area? Call us at <a href="tel:9035551234" class="text-brand font-semibold hover:underline">(903) 555-1234</a> — we'll let you know within minutes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Warning Signs -->
+  <section class="bg-gray-50 py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Warning Signs to Watch For</h2>
+      <SignsList items={warningSigns} />
+      <p class="mt-6 text-gray-700">
+        If you're seeing any of these, don't wait. Foundation problems compound over time. A repair that costs $5,000 today can become a $25,000 job in two years.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    heading="Get Your Free Foundation Inspection"
+    subtext="We'll send a local Tyler expert to your home — no charge, no pressure. You'll get a clear assessment of what's happening, what needs to be done, and what it will cost. No upsells, no scare tactics."
+    buttonText="Schedule Your Free Inspection → (903) 555-1234"
+  />
+</Layout>

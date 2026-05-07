@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTASection from '../components/CTASection.astro';
+import SignsList from '../components/SignsList.astro';
+
+const signs = [
+  'Floors that slope noticeably toward one end or corner of the house',
+  'Marbles or balls roll on their own across the floor',
+  'Doors and windows stick or won\'t latch — especially on one side of the home',
+  'Cracks radiating from the corners of door frames and windows',
+  'A visible "hump" or "valley" in your floor',
+  'Gaps between baseboards and the floor',
+];
+---
+
+<Layout
+  title="House Leveling in Tyler, TX | Tyler Foundation Pros"
+  description="Is your Tyler home sitting uneven? We level houses across East Texas — concrete slabs and pier & beam. Free inspection. Call (903) 555-1234."
+>
+  <!-- Hero -->
+  <HeroSection
+    h1="House Leveling in Tyler, TX"
+    subheading="If your home feels like it's constantly tilting, your foundation has likely settled unevenly. We correct differential settlement and restore structural stability."
+    buttonText="Call (903) 555-1234 — Free Inspection"
+  />
+
+  <!-- Intro -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-gray-700 text-lg mb-4">
+        If you walk through your home and feel like you're constantly walking uphill or downhill, your house has settled unevenly — a condition called differential settlement. It's one of the most common foundation problems in East Texas, and it's almost always caused by Tyler's clay soil behaving differently under different parts of your home.
+      </p>
+      <p class="text-gray-700 text-lg">
+        House leveling is the process of correcting that uneven settlement and restoring your home to a safe, stable, level position.
+      </p>
+    </div>
+  </section>
+
+  <!-- What Causes It -->
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">What Causes a House to Go Out of Level?</h2>
+      <p class="text-gray-700 mb-4">
+        In East Texas, the culprit is almost always expansive clay soil. The clay under one part of your home may be wetter or drier than under another — because of a leaking pipe, tree roots drawing moisture, grading that sends water to one corner, or simply uneven sun exposure around your foundation.
+      </p>
+      <p class="text-gray-700">
+        When one section of your foundation sinks deeper than the rest, your home goes out of level. The differential can range from a fraction of an inch to several inches in severe cases.
+      </p>
+    </div>
+  </section>
+
+  <!-- Signs -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Signs Your Tyler Home Needs Leveling</h2>
+      <SignsList items={signs} />
+    </div>
+  </section>
+
+  <!-- The Leveling Process -->
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">The Leveling Process</h2>
+      <p class="text-gray-700 mb-4">
+        Whether your home is on a slab or pier-and-beam foundation, leveling follows the same principle: we identify where the settlement has occurred, stabilize those zones with steel piers or re-shimmed pier-and-beam supports, and hydraulically raise the settled sections back toward level.
+      </p>
+      <p class="text-gray-700">
+        The goal isn't always "perfectly flat" — it's to eliminate the differential movement that's stressing your home's structure. Most leveling jobs in Tyler take one to two days.
+      </p>
+    </div>
+  </section>
+
+  <!-- Will Leveling Crack My Walls -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Will Leveling Crack My Walls?</h2>
+      <p class="text-gray-700">
+        This is the most common question we get. The honest answer: you may see minor cosmetic cracking during or after the lift, especially if your home has been out of level for a long time. We lift slowly and carefully to minimize this. Any new cracks that appear are typically hairline and cosmetic, not structural — and they're easy to patch once the foundation is stable.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTASection
+    heading="Get a Free Leveling Assessment"
+    subtext="Call us and we'll come out to your Tyler home, check the level throughout, inspect your foundation, and tell you exactly what's happening and what it will cost to fix it. No charge, no obligation."
+    buttonText="Call (903) 555-1234 — Free Inspection"
+  />
+</Layout>

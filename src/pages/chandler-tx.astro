@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTASection from '../components/CTASection.astro';
+import SignsList from '../components/SignsList.astro';
+
+const signs = [
+  'Floors that have gradually developed a slope over the years',
+  'Interior doors that used to swing freely but now stick or drag',
+  'Cracks appearing in walls or ceilings that weren\'t there before',
+  'Gaps between window frames and the surrounding wall',
+  'Brick or exterior siding that has visibly separated or cracked',
+];
+---
+
+<Layout
+  title="Foundation Repair in Chandler, TX | Tyler Foundation Pros"
+  description="Foundation cracking or settling in Chandler, TX? Tyler Foundation Pros serves Henderson County homeowners. Free inspection. Call (903) 555-1234."
+>
+  <!-- Hero -->
+  <HeroSection
+    h1="Foundation Repair in Chandler, TX"
+    subheading="Tyler Foundation Pros extends our service area to Chandler and the Lake Palestine corridor. Free inspections, expert repairs, lifetime warranty."
+    buttonText="Call (903) 555-1234 — Free Chandler Inspection"
+  />
+
+  <!-- Intro -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-gray-700 text-lg mb-4">
+        Chandler, TX sits just west of Tyler in Henderson County, home to Lake Palestine and a mix of long-established neighborhoods and rural residential properties. Many homes in the Chandler area are older, with original foundations that have never been inspected or serviced.
+      </p>
+      <p class="text-gray-700 text-lg">
+        Tyler Foundation Pros extends our service area to Chandler and the Lake Palestine corridor. Whether you're on a concrete slab or a pier-and-beam system, we offer free inspections and expert repairs.
+      </p>
+    </div>
+  </section>
+
+  <!-- Chandler's Challenge -->
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Chandler's Foundation Challenge: Older Homes, Active Soil</h2>
+      <p class="text-gray-700 mb-4">
+        The Henderson County soil west of Tyler shares the same expansive clay characteristics as Smith County — high shrink-swell potential, seasonal moisture variation, and consistent pressure on foundations year after year.
+      </p>
+      <p class="text-gray-700">
+        Homes in the Chandler area that were built in the 1960s through 1980s often have never had a professional foundation inspection. By the time visible problems appear — sloping floors, sticking doors, wall cracks — the underlying movement has often been occurring for years.
+      </p>
+    </div>
+  </section>
+
+  <!-- Signs -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Signs Your Chandler Home Has Foundation Issues</h2>
+      <SignsList items={signs} />
+    </div>
+  </section>
+
+  <!-- We Come to Chandler -->
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">We Come to Chandler</h2>
+      <p class="text-gray-700">
+        We know some contractors won't make the drive west of Tyler. We do. If you're in the Chandler, Brownsboro, or Lake Palestine area, call us. Free inspection, same warranty, same crew.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTASection
+    heading="Schedule Your Free Chandler Inspection"
+    subtext="We make the drive. Free inspection, honest assessment, lifetime warranty — same as Tyler."
+    buttonText="Call (903) 555-1234 — Free Chandler Inspection"
+  />
+</Layout>

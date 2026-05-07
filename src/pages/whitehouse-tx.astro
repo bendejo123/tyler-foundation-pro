@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTASection from '../components/CTASection.astro';
+import SignsList from '../components/SignsList.astro';
+
+const signs = [
+  'Diagonal cracks at the corners of doors and windows',
+  'Floors that slope toward the back or sides of the home',
+  'Sticky doors — especially interior bedroom doors',
+  'Cracks in exterior brick or stone veneer',
+  'Gaps between your baseboards and the floor or wall',
+];
+---
+
+<Layout
+  title="Foundation Repair in Whitehouse, TX | Tyler Foundation Pros"
+  description="Foundation problems in Whitehouse, TX? Tyler Foundation Pros serves Whitehouse with free inspections and expert slab and pier & beam repairs. Call (903) 555-1234."
+>
+  <!-- Hero -->
+  <HeroSection
+    h1="Expert Foundation Repair in Whitehouse, TX"
+    subheading="Tyler Foundation Pros serves Whitehouse homeowners with free inspections, expert repairs, and a lifetime transferable warranty."
+    buttonText="Call (903) 555-1234 — Free Whitehouse Inspection"
+  />
+
+  <!-- Intro -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-gray-700 text-lg mb-4">
+        Whitehouse has become one of the most popular family communities south of Tyler — and it's easy to see why. But beneath Whitehouse's neighborhoods, the same East Texas clay soil that plagues the region is putting pressure on concrete slabs and pier-and-beam foundations throughout the area.
+      </p>
+      <p class="text-gray-700 text-lg">
+        Tyler Foundation Pros provides free foundation inspections and expert repairs to Whitehouse homeowners. We're local, we're fast, and we stand behind our work with a lifetime warranty.
+      </p>
+    </div>
+  </section>
+
+  <!-- Foundation Challenges -->
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Foundation Challenges Specific to Whitehouse</h2>
+      <p class="text-gray-700 mb-4">
+        The Whitehouse area sits on clay-heavy soil that expands and contracts dramatically with rainfall and drought. Many Whitehouse homes are in the 20–40 year age range — old enough for the original foundation to begin showing stress, but too new to have been designed with today's pier systems.
+      </p>
+      <p class="text-gray-700">
+        Homes near drainage areas and low-lying lots in Whitehouse are particularly prone to moisture-related foundation movement, where soil stays wet longer and fluctuates more aggressively.
+      </p>
+    </div>
+  </section>
+
+  <!-- Signs -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">What to Watch For in Your Whitehouse Home</h2>
+      <SignsList items={signs} />
+    </div>
+  </section>
+
+  <!-- Free Inspection -->
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Free Foundation Inspection in Whitehouse</h2>
+      <p class="text-gray-700">
+        Call us at <a href="tel:9035551234" class="text-brand font-semibold hover:underline">(903) 555-1234</a> and we'll send a local foundation expert to your Whitehouse home. We'll inspect, report, and give you a written estimate — completely free and with no obligation.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTASection
+    heading="Schedule Your Free Whitehouse Inspection"
+    subtext="Local experts. No charge. No pressure. We assess, report, and give you a written estimate."
+    buttonText="Call (903) 555-1234 — Free Whitehouse Inspection"
+  />
+</Layout>

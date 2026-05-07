@@ -1,0 +1,22 @@
+---
+interface Props {
+  h1: string;
+  subheading: string;
+  buttonText: string;
+}
+
+const { h1, subheading, buttonText } = Astro.props;
+---
+
+<section class="bg-black text-white py-20 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">{h1}</h1>
+    <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">{subheading}</p>
+    <a
+      href="tel:9035551234"
+      class="inline-block bg-brand text-white font-semibold text-lg px-8 py-4 rounded hover:bg-[#b84200] transition-colors"
+    >
+      {buttonText}
+    </a>
+  </div>
+</section>

@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTASection from '../components/CTASection.astro';
+import SignsList from '../components/SignsList.astro';
+
+const signs = [
+  'Diagonal cracks in interior drywall, particularly near door frames and corners',
+  'Cracks in your exterior brick or stucco',
+  'Doors or windows that stick or won\'t close properly',
+  'Visible cracks in the slab itself (in garage, utility room, or exterior)',
+  'Floors that slope or feel uneven underfoot',
+  'Gaps appearing between walls and ceiling',
+];
+---
+
+<Layout
+  title="Slab Foundation Repair in Tyler, TX | Tyler Foundation Pros"
+  description="Cracked or settling concrete slab in Tyler, TX? We lift and stabilize slab foundations across East Texas. Free inspection, lifetime warranty. Call (903) 555-1234."
+>
+  <!-- Hero -->
+  <HeroSection
+    h1="Slab Foundation Repair in Tyler, TX"
+    subheading="The vast majority of homes built in Tyler and Smith County after 1960 sit on a concrete slab — and East Texas clay soil puts that slab under constant stress."
+    buttonText="Call (903) 555-1234 — Free Inspection"
+  />
+
+  <!-- Intro -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-gray-700 text-lg mb-4">
+        The vast majority of homes built in Tyler and Smith County after 1960 sit on a concrete slab. It's the standard foundation method in East Texas — but it comes with a specific vulnerability: expansive clay soil.
+      </p>
+      <p class="text-gray-700 text-lg">
+        When Tyler's clay soil shifts, your slab shifts with it. Sections can sink, tilt, or crack. And because your entire home sits directly on that slab, every structural element — your walls, your roof, your doors — moves too.
+      </p>
+    </div>
+  </section>
+
+  <!-- Signs -->
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Signs Your Tyler Slab Needs Repair</h2>
+      <SignsList items={signs} />
+    </div>
+  </section>
+
+  <!-- How We Fix It -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">How We Fix It</h2>
+      <p class="text-gray-700 mb-8">
+        We use a steel pier push system — the industry standard for permanent slab stabilization in East Texas. Here's the process:
+      </p>
+      <div class="space-y-6">
+        <div class="border-l-4 border-brand pl-6">
+          <h3 class="text-xl font-bold mb-2">1. Inspection</h3>
+          <p class="text-gray-600">We assess your slab, identify the zones of movement, and determine how many pier points are needed to stabilize and lift your foundation.</p>
+        </div>
+        <div class="border-l-4 border-brand pl-6">
+          <h3 class="text-xl font-bold mb-2">2. Pier Installation</h3>
+          <p class="text-gray-600">We drive galvanized steel piers through the shifting clay layer, down to stable load-bearing soil or bedrock. This can go 15–30 feet deep in East Texas depending on soil conditions.</p>
+        </div>
+        <div class="border-l-4 border-brand pl-6">
+          <h3 class="text-xl font-bold mb-2">3. Hydraulic Lift</h3>
+          <p class="text-gray-600">Using synchronized hydraulic jacks, we raise the settled sections of your slab back toward their original elevation — closing cracks and re-plumbing your walls and door frames in the process.</p>
+        </div>
+        <div class="border-l-4 border-brand pl-6">
+          <h3 class="text-xl font-bold mb-2">4. Final Inspection &amp; Cleanup</h3>
+          <p class="text-gray-600">We document before-and-after measurements, restore any landscaping disturbed during installation, and walk you through your warranty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Polyurethane Foam -->
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">What About Polyurethane Foam Lifting?</h2>
+      <p class="text-gray-700 mb-4">
+        For smaller, isolated areas of slab settlement — like a sunken patio, driveway section, or garage floor — we also offer polyurethane foam injection (sometimes called "slabjacking"). This is faster and less invasive than steel piers and works well for non-structural slabs.
+      </p>
+      <p class="text-gray-700">
+        If your main living area slab has settled, we recommend steel piers for permanent results.
+      </p>
+    </div>
+  </section>
+
+  <!-- Warranty -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Warranty</h2>
+      <p class="text-gray-700">
+        Our slab repair work comes with a lifetime transferable warranty. If you sell your home, the warranty transfers to the new owner — which is a strong selling point in Tyler's real estate market.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTASection
+    heading="Get a Free Slab Inspection in Tyler"
+    subtext="Call or reach out today. We'll send a local specialist to your home, assess your slab at no charge, and give you an honest written estimate."
+    buttonText="Call (903) 555-1234 — Free Inspection"
+  />
+</Layout>

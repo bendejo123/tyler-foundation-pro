@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTASection from '../components/CTASection.astro';
+import SignsList from '../components/SignsList.astro';
+
+const signs = [
+  'Cracks in drywall, especially diagonal cracks near door frames',
+  'Doors or windows sticking or failing to latch',
+  'Sloping or uneven floors',
+  'Gaps forming between walls and ceilings or floors',
+  'Exterior brick cracks or gaps in mortar joints',
+];
+---
+
+<Layout
+  title="Foundation Repair in Lindale, TX | Tyler Foundation Pros"
+  description="Foundation cracking or settling in Lindale, TX? Tyler Foundation Pros serves Lindale homeowners with free inspections and permanent repairs. Call (903) 555-1234."
+>
+  <!-- Hero -->
+  <HeroSection
+    h1="Expert Foundation Repair in Lindale, TX"
+    subheading="Tyler Foundation Pros serves Lindale homeowners with free foundation inspections and permanent repairs — fast response, local expertise, lifetime warranty."
+    buttonText="Call (903) 555-1234 — Free Lindale Inspection"
+  />
+
+  <!-- Intro -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-gray-700 text-lg mb-4">
+        Lindale is one of the fastest-growing communities in East Texas, and with that growth comes a real foundation challenge: new construction homes built on the same expansive red clay soil that's been cracking foundations throughout Smith and Cherokee Counties for generations.
+      </p>
+      <p class="text-gray-700 text-lg">
+        Whether you're in a newer subdivision near Pinkerton Elementary or an older home near downtown Lindale, Tyler Foundation Pros provides free foundation inspections and permanent repairs for homeowners throughout the Lindale area.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Lindale Homes Develop Problems -->
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Why Lindale Homes Develop Foundation Problems</h2>
+      <p class="text-gray-700 mb-4">
+        The clay-heavy soil in the Lindale area is highly reactive to moisture. During Lindale's wet seasons, the soil swells and pushes up against your foundation. During dry East Texas summers, it contracts and pulls away — leaving voids that your foundation slowly sinks into.
+      </p>
+      <p class="text-gray-700">
+        New construction in Lindale is particularly vulnerable during the first five to ten years, as soil that was disturbed during construction compacts and settles unevenly beneath the slab.
+      </p>
+    </div>
+  </section>
+
+  <!-- Signs -->
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Signs You Need Foundation Repair in Lindale</h2>
+      <SignsList items={signs} />
+    </div>
+  </section>
+
+  <!-- Free Inspection -->
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Free Foundation Inspection for Lindale Homeowners</h2>
+      <p class="text-gray-700">
+        We serve Lindale and the surrounding area with no-cost inspections. Call our local (903) number and we'll schedule a visit at your convenience — typically within 48 hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTASection
+    heading="Schedule Your Free Lindale Inspection"
+    subtext="Local experts. No charge. No pressure. We'll assess your foundation and give you an honest written estimate."
+    buttonText="Call (903) 555-1234 — Free Lindale Inspection"
+  />
+</Layout>
