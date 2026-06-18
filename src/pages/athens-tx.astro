@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTASection from '../components/CTASection.astro';
+import SignsList from '../components/SignsList.astro';
+
+const signs = [
+  'Diagonal cracks in drywall near door frames or window corners',
+  'Doors or windows that stick or won\'t close properly',
+  'Floors that slope, feel bouncy, or have noticeable low spots',
+  'Gaps forming between walls and ceilings or along baseboards',
+  'Cracks in exterior brick or mortar joints',
+  'Water pooling near the foundation after heavy rain',
+];
+---
+
+<Layout
+  title="Foundation Repair in Athens, TX | Tyler Foundation Pros"
+  description="Foundation problems in Athens, TX? Tyler Foundation Pros connects Henderson County homeowners with licensed foundation repair contractors. Free inspections. Call (903) 582-7837."
+>
+  <HeroSection
+    h1="Foundation Repair in Athens, TX"
+    subheading="Connecting Athens and Henderson County homeowners with licensed local foundation repair contractors. Free inspections, honest estimates, lifetime warranty work."
+    buttonText="Call (903) 582-7837 — Free Athens Inspection"
+  />
+
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-gray-700 text-lg mb-4">
+        Athens is the county seat of Henderson County, about 45 miles southwest of Tyler on US-175. Like all of East Texas, Athens is built on reactive clay soil — and that means foundation movement is a fact of life for local homeowners.
+      </p>
+      <p class="text-gray-700 text-lg">
+        Tyler Foundation Pros connects Athens homeowners with licensed foundation repair contractors who know Henderson County soil. The inspection is free. The estimate is written. There's no pressure to commit.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Why Athens Homes Develop Foundation Issues</h2>
+      <p class="text-gray-700 mb-4">
+        Henderson County sits at the transition between the East Texas Pineywoods and the Blackland Prairie — a region where soil types can change significantly from one neighborhood to the next. Much of Athens proper is built on clay-heavy soil that expands and contracts significantly with moisture changes.
+      </p>
+      <p class="text-gray-700">
+        The area around Cedar Creek Lake in Henderson County adds additional complexity — lakeside properties can experience soil saturation and drainage issues that accelerate foundation movement. Licensed contractors can assess these localized conditions during the free inspection.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Warning Signs in Your Athens Home</h2>
+      <SignsList items={signs} />
+      <p class="mt-6 text-gray-700">
+        Don't wait on these. Call <a href="tel:9035827837" class="text-brand font-semibold hover:underline">(903) 582-7837</a> for a free inspection scheduled within 48 hours.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Our Services in Athens</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/slab-foundation-repair" class="hover:underline text-brand">Slab Foundation Repair</a></h3>
+          <p class="text-gray-600 text-sm">Steel push pier systems for settled concrete slabs in Athens and Henderson County.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/pier-beam-repair" class="hover:underline text-brand">Pier &amp; Beam Repair</a></h3>
+          <p class="text-gray-600 text-sm">Beam replacement and pier resetting for older Athens homes with crawl space foundations.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/house-leveling" class="hover:underline text-brand">House Leveling</a></h3>
+          <p class="text-gray-600 text-sm">Re-leveling for homes with differential settlement causing sloped floors or sticking doors.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/commercial-foundation-repair" class="hover:underline text-brand">Commercial Repair</a></h3>
+          <p class="text-gray-600 text-sm">Foundation services for Athens commercial properties and lake-area structures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    heading="Get Your Free Athens Foundation Inspection"
+    subtext="Licensed contractors serving Henderson County. Written estimate, no obligation. Appointments typically available within 48 hours."
+    buttonText="Call (903) 582-7837 — Free Inspection"
+  />
+</Layout>

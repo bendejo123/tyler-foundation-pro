@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTASection from '../components/CTASection.astro';
+import SignsList from '../components/SignsList.astro';
+
+const signs = [
+  'Diagonal cracks in drywall near door frames or window corners',
+  'Doors or windows that stick, won\'t latch, or have gaps at the corners',
+  'Floors that feel uneven, slope, or have visible dips',
+  'Gaps forming between your walls and ceiling or floor',
+  'Cracks in exterior brick veneer or mortar joints',
+  'Standing water near the foundation after rain',
+];
+---
+
+<Layout
+  title="Foundation Repair in Canton, TX | Tyler Foundation Pros"
+  description="Foundation cracking or settling in Canton, TX? Tyler Foundation Pros connects Van Zandt County homeowners with licensed repair contractors. Free inspection. Call (903) 582-7837."
+>
+  <HeroSection
+    h1="Foundation Repair in Canton, TX"
+    subheading="Serving Canton and Van Zandt County homeowners with licensed local foundation repair contractors. Free inspections, honest estimates, and permanent repairs."
+    buttonText="Call (903) 582-7837 — Free Canton Inspection"
+  />
+
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-gray-700 text-lg mb-4">
+        Canton is known as the home of First Monday Trade Days, but it's also home to thousands of homeowners dealing with the same foundation challenges that affect all of East Texas: reactive clay soil that shifts with every wet and dry season.
+      </p>
+      <p class="text-gray-700 text-lg">
+        Tyler Foundation Pros connects Canton and Van Zandt County homeowners with licensed local contractors — at no cost. The inspection is free, the estimate is written, and there's no obligation to commit.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Foundation Issues in Van Zandt County</h2>
+      <p class="text-gray-700 mb-4">
+        Van Zandt County sits on the western edge of the East Texas clay belt. The soil around Canton is part of the Houston and Beaumont clay series — highly expansive material that can move several inches vertically during extreme wet-to-dry cycles. Canton's position between Dallas and Tyler means it gets the seasonal weather patterns of both regions, including intense spring rains followed by hot, dry summers.
+      </p>
+      <p class="text-gray-700">
+        Homes near Lake Tawakoni in Van Zandt County may also experience soil movement related to fluctuating water levels and drainage patterns around the lake. Licensed contractors familiar with the area know what to look for.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Warning Signs in Your Canton Home</h2>
+      <SignsList items={signs} />
+      <p class="mt-6 text-gray-700">
+        Foundation problems don't fix themselves — they grow. Call <a href="tel:9035827837" class="text-brand font-semibold hover:underline">(903) 582-7837</a> and we'll get a licensed contractor to your Canton home within 48 hours for a free assessment.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Services We Provide in Canton</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/slab-foundation-repair" class="hover:underline text-brand">Slab Foundation Repair</a></h3>
+          <p class="text-gray-600 text-sm">Steel push pier stabilization for settled slab foundations in Canton and surrounding Van Zandt County.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/pier-beam-repair" class="hover:underline text-brand">Pier &amp; Beam Repair</a></h3>
+          <p class="text-gray-600 text-sm">Beam replacement, pier resetting, and crawl space leveling for older Canton homes.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/house-leveling" class="hover:underline text-brand">House Leveling</a></h3>
+          <p class="text-gray-600 text-sm">Correcting differential settlement to restore level floors and properly aligned doors and windows.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/commercial-foundation-repair" class="hover:underline text-brand">Commercial Repair</a></h3>
+          <p class="text-gray-600 text-sm">Foundation stabilization for Canton commercial properties and trade-day area structures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    heading="Get Your Free Canton Foundation Inspection"
+    subtext="Local contractors. No charge. No sales pressure. Written estimate with clear pricing — typically within 48 hours."
+    buttonText="Call (903) 582-7837 — Free Inspection"
+  />
+</Layout>

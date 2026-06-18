@@ -5,39 +5,58 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description: string;
+  canonicalUrl?: string;
+  ogImage?: string;
 }
 
-const { title, description } = Astro.props;
+const {
+  title,
+  description,
+  canonicalUrl = Astro.url.href,
+  ogImage = 'https://tylerfoundationpro.com/og-image.jpg',
+} = Astro.props;
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "HomeAndConstructionBusiness",
   "name": "Tyler Foundation Pros",
+  "url": "https://tylerfoundationpro.com",
   "description": "Expert foundation repair in Tyler, TX and East Texas. Slab repair, pier and beam, house leveling, and commercial foundation services.",
   "telephone": "(903) 582-7837",
+  "image": "https://tylerfoundationpro.com/og-image.jpg",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "1400 W Southwest Loop 323, Suite 50",
     "addressLocality": "Tyler",
     "addressRegion": "TX",
+    "postalCode": "75701",
     "addressCountry": "US"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 32.3513,
+    "longitude": -95.3011
+  },
   "areaServed": [
-    "Tyler, TX",
-    "Lindale, TX",
-    "Whitehouse, TX",
-    "Bullard, TX",
-    "Flint, TX",
-    "Hideaway, TX",
-    "Chandler, TX"
+    "Tyler, TX", "Lindale, TX", "Whitehouse, TX", "Bullard, TX",
+    "Flint, TX", "Hideaway, TX", "Chandler, TX", "Jacksonville, TX",
+    "Longview, TX", "Athens, TX", "Canton, TX"
   ],
-  "serviceType": [
-    "Slab Foundation Repair",
-    "Pier and Beam Repair",
-    "House Leveling",
-    "Commercial Foundation Repair"
-  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Foundation Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Slab Foundation Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pier and Beam Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "House Leveling" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Foundation Repair" } }
+    ]
+  },
   "openingHours": "Mo-Su 00:00-24:00",
-  "priceRange": "$$"
+  "priceRange": "$$",
+  "sameAs": [
+    "https://maps.app.goo.gl/YvwNdfSuWJp4Q4RS8"
+  ]
 };
 ---
 
@@ -48,6 +67,23 @@ const schema = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Tyler Foundation Pros" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />

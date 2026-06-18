@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTASection from '../components/CTASection.astro';
+import SignsList from '../components/SignsList.astro';
+
+const signs = [
+  'Diagonal cracks in drywall near door frames or window corners',
+  'Doors or windows that stick, won\'t close, or have visible gaps',
+  'Sloping, bouncy, or uneven floors',
+  'Gaps forming between walls and ceilings or baseboards',
+  'Cracks in exterior brick veneer or mortar joints',
+  'Water pooling against the foundation after rain',
+];
+---
+
+<Layout
+  title="Foundation Repair in Longview, TX | Tyler Foundation Pros"
+  description="Foundation cracking or settling in Longview, TX? Tyler Foundation Pros connects Longview homeowners with licensed foundation repair contractors. Free inspections. Call (903) 582-7837."
+>
+  <HeroSection
+    h1="Foundation Repair in Longview, TX"
+    subheading="Serving Gregg and Harrison County homeowners with licensed local foundation repair contractors, free inspections, and lifetime warranty work."
+    buttonText="Call (903) 582-7837 — Free Longview Inspection"
+  />
+
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-gray-700 text-lg mb-4">
+        Longview is one of the largest cities in East Texas, and its homes face the same foundational challenge as the rest of the region: expansive clay soil that swells with moisture and shrinks in the drought. With Gregg County's history of industrial activity and shifting water tables, Longview homeowners often deal with more complex soil profiles than rural East Texas communities.
+      </p>
+      <p class="text-gray-700 text-lg">
+        Tyler Foundation Pros connects Longview homeowners and commercial property owners with licensed, experienced foundation repair contractors who know Gregg and Harrison County soil conditions — at no cost to get started.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Foundation Challenges Specific to Longview</h2>
+      <p class="text-gray-700 mb-4">
+        Longview's soil is predominantly East Texas Redland clay — highly reactive to moisture changes. In Gregg County's older neighborhoods like Forest Hills and Pine Tree, homes from the 1950s–1970s often have pier-and-beam foundations that have been through decades of seasonal soil movement. In newer subdivisions on the east side of Longview, slab foundations deal with the same clay expansion that affects all of East Texas.
+      </p>
+      <p class="text-gray-700">
+        The former oil-producing areas around Longview can also have isolated soil subsidence issues related to historical underground extraction. Licensed contractors can identify these situations during the free inspection.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Warning Signs in Your Longview Home</h2>
+      <SignsList items={signs} />
+      <p class="mt-6 text-gray-700">
+        If you're seeing any of these, get a free inspection before the problem grows. Foundation repair costs in Longview typically run $4,000–$12,000 — but the longer you wait, the more piers you'll need. Call <a href="tel:9035827837" class="text-brand font-semibold hover:underline">(903) 582-7837</a> to schedule yours.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Foundation Repair Services in Longview</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/slab-foundation-repair" class="hover:underline text-brand">Slab Foundation Repair</a></h3>
+          <p class="text-gray-600 text-sm">Steel push pier systems for settled or cracked concrete slabs — the most common foundation type in Longview's post-1960 construction.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/pier-beam-repair" class="hover:underline text-brand">Pier &amp; Beam Repair</a></h3>
+          <p class="text-gray-600 text-sm">Beam and post replacement, re-leveling, and crawl space repair for Longview's older historic homes.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/house-leveling" class="hover:underline text-brand">House Leveling</a></h3>
+          <p class="text-gray-600 text-sm">Correcting differential settlement so floors are level and doors and windows operate correctly.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-5">
+          <h3 class="font-bold mb-2"><a href="/commercial-foundation-repair" class="hover:underline text-brand">Commercial Foundation Repair</a></h3>
+          <p class="text-gray-600 text-sm">Foundation stabilization for Longview commercial buildings — retail strips, offices, warehouses, and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    heading="Schedule Your Free Longview Foundation Inspection"
+    subtext="Licensed contractors serving Gregg and Harrison County. Free written estimate. No obligation, no pressure."
+    buttonText="Call (903) 582-7837 — Free Inspection"
+  />
+</Layout>
