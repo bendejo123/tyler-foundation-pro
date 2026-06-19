@@ -87,8 +87,19 @@ const warningSigns = [
         We serve homeowners and businesses throughout Smith County and beyond, including:
       </p>
       <div class="flex flex-wrap gap-3 mb-6">
-        {['Lindale', 'Whitehouse', 'Bullard', 'Flint', 'Hideaway', 'Chandler', 'Longview', 'Jacksonville', 'Athens', 'Canton'].map((city) => (
-          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm font-medium">{city}</span>
+        {[
+          { name: 'Lindale', slug: 'lindale-tx' },
+          { name: 'Whitehouse', slug: 'whitehouse-tx' },
+          { name: 'Bullard', slug: 'bullard-tx' },
+          { name: 'Flint', slug: 'flint-tx' },
+          { name: 'Hideaway', slug: 'hideaway-tx' },
+          { name: 'Chandler', slug: 'chandler-tx' },
+          { name: 'Longview', slug: 'longview-tx' },
+          { name: 'Jacksonville', slug: 'jacksonville-tx' },
+          { name: 'Athens', slug: 'athens-tx' },
+          { name: 'Canton', slug: 'canton-tx' },
+        ].map(({ name, slug }) => (
+          <a href={`/${slug}`} class="bg-gray-100 text-gray-700 hover:bg-brand hover:text-white px-3 py-1 rounded text-sm font-medium transition-colors">{name}</a>
         ))}
       </div>
       <p class="text-gray-600 text-sm">
